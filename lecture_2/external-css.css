@@ -1,0 +1,70 @@
+/* Chon tat ca */
+*{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	color: black;
+}
+
+/* Tat ca tag h2 va h3 */
+h3, h2{
+	color: green;
+}
+
+/* Remove list style type of all tag ul */
+ul{
+	list-style-type: none;
+}
+
+/* Style all li tags  inside ul tag */
+ul li{
+	display: inline;
+}
+
+/* All a tag child of li tags which child of ul tag */
+ul li a{
+	text-decoration: none;
+}
+
+/* Style grand-child a tag when hover */
+ul li a:hover{
+	color: red;
+}
+
+/* First li child of ul */
+ul li:first-child{
+	color: blue;
+}
+
+/* Selection: tag with class tieude1 */
+.tieude1{
+	color: brown;
+	font-size: 30px;
+}
+
+/* Selection: tag with id tieude2 */
+#tieude2{
+	color: cadetblue;
+}
+
+/* pick tag with class name */
+p.left{
+	text-align: left;
+}
+
+p.right{
+	text-align: right;
+}
+
+.next{
+	border: 1px solid #990000;
+	width: 100px;
+	height: 40px;
+}
+
+table{
+	border-collapse: collapse;
+}
+
+table, td, th{
+	border: 1px solid black;
+}
