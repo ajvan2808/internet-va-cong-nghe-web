@@ -9,9 +9,62 @@
 	<!-- JQUERY - JAVASCRIPT LIBRARY-->
 	<!-- Jquery CDN -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("#soHang").click(function(){
+				var sohang1 = $(".sohang1").val();
+				var sohang2 = $(".sohang2").val();
+				sohang1 = parseInt(sohang1);
+				sohang2 = parseInt(sohang2);
+				ketqua = sohang1 + sohang2
+				$(".ketqua").val(ketqua);
+			});
+		});
+
+		$(document).ready(function(){
+			$("#giaiPT").click(function(){
+				var hesoa = $(".hesoa").val();
+				var hesob = $(".hesob").val();
+				var hesoc = $(".hesoc").val();
+				a=parseInt(hesoa);
+				b=parseInt(hesob);
+				c=parseInt(hesoc);
+				var delta, x1, x2 = 0;
+				delta = b * b - 4 * a * c;
+				if (delta == 0) {
+					x1 = -b/(2 * a);
+					str='PT co nghiem kep x1=x2='+x1;
+				}
+				else
+				if (delta < 0)
+					str='PT vo nghiem';
+				else {
+					x1 = (-b - Math.sqrt(delta)) / (2 * a);
+					x2 = (-b + Math.sqrt(delta)) / (2 * a);
+					str='PT co x1='+x1;
+					str+=' PT co x2='+x2;
+				}
+				$("span").html(str);    
+			});
+		});
+	</script>
 
 </head>
 <body>
+	So hang 1: <input type="text" class="sohang1"></input><br>
+	So hang 2: <input type="text" class="sohang2"></input><br>
+	<button id="soHang"> = </button><br>
+	Ket qua: <input type="text" class="ketqua"></input><br>
 	
+	<br>
+	<br>
+
+	<div>
+		He so a: <input type="text" class="hesoa"></input><br>
+		He so b: <input type="text" class="hesob"></input><br>
+		He so c: <input type="text" class="hesoc"></input><br>
+		<button id="giaiPT"> = </button><br>
+		<span>Dap an: </span>
+	</div>
 </body>
 </html>

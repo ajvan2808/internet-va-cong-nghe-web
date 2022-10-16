@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js">           
+        </script>
+        <script>
+            $(document).ready(function(){
+                $("button").click(function(){
+                    gia=$(this).attr("giaban");
+                    masp=$(this).attr("masp");
+                    str=gia+"  "+masp;
+                    alert(str);
+                    
+                });
+            });
+        </script>  
+    </head>
+    <body>
+        <div>iPhone 10</div><button giaban="10000" masp="iphone10">Mua hàng</button>
+        <div>iPhone 11</div><button giaban="20000" masp="iphone11">Mua hàng</button>
+        <div>iPhone 12</div><button giaban="30000" masp="iphone12">Mua hàng</button>       
+    </body>
+</html>

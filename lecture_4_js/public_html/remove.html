@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js">           
+        </script>
+        <script>
+            $(document).ready(function(){
+                $(".delete").click(function(){
+                    $(this).parent().parent().remove();
+                });
+            });
+        </script>  
+    </head>
+    <body>
+        <table border="1">
+            <tr>
+              <th>Company</th>
+              <th>Contact</th>
+              <th>Country</th>
+              <th>chức năng</th>
+            </tr>
+            <tr>
+              <td>Alfreds Futterkiste</td>
+              <td>Maria Anders</td>
+              <td>Germany</td>
+              <td><button class="delete">Delete</button></td>
+            </tr>
+            <tr>
+              <td>Centro comercial Moctezuma</td>
+              <td>Francisco Chang</td>
+              <td>Mexico</td>
+              <td><button class="delete">Delete</button></td>
+            </tr>
+          </table>
+    </body>
+</html>
