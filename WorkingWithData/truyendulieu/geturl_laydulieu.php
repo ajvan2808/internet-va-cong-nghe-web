@@ -10,11 +10,13 @@ and open the template in the editor.
         <title></title>
     </head>
     <body>
+        <!-- GET du lieu qua url -->
         <?php
-            $ma=$_GET['masp'];
-            $ten=$_GET['tensp'];
-            echo $ma."<br>";
-            echo $ten;
+            $ma_sp = $_GET['masp'];
+            $ten_sp = $_GET['tensp'];
+            // In ra ma sp va ten
+            echo $ma_sp."</br>";
+            echo $ten_sp;
         ?>
     </body>
 </html>

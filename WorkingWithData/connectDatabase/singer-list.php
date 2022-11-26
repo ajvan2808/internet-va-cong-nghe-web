@@ -7,6 +7,17 @@
 	<title>Liet ke Ca si</title>
 </head>
 <body>
-	
+	<?php
+		include "connect_data.php";
+		$sql = "SELECT * FROM casi";
+		$results = $connect->query($sql);
+		while($rows = $results->fetch_row())
+		{
+			echo $rows['MaCaSi']."-".$rows[1]."<br />";
+		}
+		echo "Số dòng truy xuất được". $results->num_rows;
+		// Đóng kết nối CSDL
+		$connect->close();
+	?>
 </body>
 </html>

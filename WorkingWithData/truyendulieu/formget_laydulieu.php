@@ -10,11 +10,11 @@ and open the template in the editor.
         <title></title>
     </head>
     <body>
-        <?php
-            $user = $_GET['user'];
-            $pass = $_GET['pass'];
-            echo $user."<br>";
-            echo$pass;
+        <?php 
+            $username = $_GET['username'];
+            $pass = $_GET['pwd'];
+            echo 'username: ' .$username.'</br>';
+            echo 'password: ' .$pass;
         ?>
     </body>
 </html>

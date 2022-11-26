@@ -14,7 +14,9 @@ and open the template in the editor.
         <a href="formget.php">Truyen dữ liệu bằng Get thông qua Form</a><br>
         <a href="formpost.php">Truyen dữ liệu bằng Post thông qua Form</a><br>
         <a href="checkbox.php">Lấy dữ liệu từ checkbox</a><br>
+        <a href="multiple_checkbox.php">Lấy dữ liệu từ Multiple checkbox</a><br>
         <a href="radio.php">Lấy dữ liệu từ Radio</a><br>
+        <a href="basic_calculate.php">Tinh toan don gian</a><br>
          
 </body>
     

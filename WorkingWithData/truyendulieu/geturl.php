@@ -10,6 +10,6 @@ and open the template in the editor.
         <title></title>
     </head>
     <body>
-        <a href="geturl_laydulieu.php?masp=iphone10&tensp=dien thoai iphone10">Qua trang lấy dữ liệu</a>
+        <a href="geturl_laydulieu.php?masp=iphone10&tensp=dien thoai iphone 10">Qua trang lay du lieu</a>
     </body>
 </html>

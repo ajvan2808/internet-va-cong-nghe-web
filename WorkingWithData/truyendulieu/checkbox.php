@@ -17,7 +17,7 @@ and open the template in the editor.
         </form>
         <?php
             if (isset($_POST['submit'])) 
-            {
+            { // isset to check if the value is set before get it
                     if(isset($_POST['chk1']))
                         echo "checkbox 1 : " . $_POST['chk1'];
                     

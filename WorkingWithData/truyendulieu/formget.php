@@ -10,21 +10,20 @@ and open the template in the editor.
         <title></title>
     </head>
     <body>
-        <form name="form1" method="get" action="formget_laydulieu.php">
-            <p> 
-                <label>User name
-                <input name="user" type="text" id="USER">
-               </label>
-            </p>
+        <form action="formget_laydulieu.php" method="get" name="form1">
             <p>
-              <label>Pass word
-              <input name="pass" type="text" id="PASS">
-              </label>
+                <label>User name</label>
+                <input type="text" name="username" id="username">
             </p>
-            <p>
-              <input type="submit" name="Submit" value="Login">
-              </p>
-        </form>
 
+            <p>
+                <label>Password</label>
+                <input type="text" name="pwd" id="pwd">
+            </p>
+
+            <p>
+                <input type="submit" value="Submit" value="Login">
+            </p>
+        </form>
     </body>
 </html>
