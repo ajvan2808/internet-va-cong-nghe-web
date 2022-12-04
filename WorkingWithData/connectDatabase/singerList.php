@@ -8,12 +8,14 @@
 </head>
 <body>
 	<?php
-		include "connect_data.php";
+		include "connectData.php";
 		$sql = "SELECT * FROM casi";
 		$results = $connect->query($sql);
-		while($rows = $results->fetch_row())
+		// The fetch_assoc() / mysqli_fetch_assoc() function fetches a result row as an associative array (mảng kết hợp). 
+		// Fieldnames returned from this function are case-sensitive.
+		while($rows = $results->fetch_assoc())
 		{
-			echo $rows['MaCaSi']."-".$rows[1]."<br />";
+			echo $rows['MaCaSi']."-".$rows['TenCaSi']."<br />";
 		}
 		echo "Số dòng truy xuất được". $results->num_rows;
 		// Đóng kết nối CSDL
